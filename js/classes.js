@@ -1,4 +1,4 @@
-import {orders, setSumPrice, sumPrice, removeOrder} from './main.js';
+import {orders, setSumPrice, sumPrice, removeOrder} from '/testWebPage/js/main.js';
 export class Order {
     constructor(title, price, count){
         this.title = title;

@@ -1,6 +1,6 @@
-import {reuqestPOSTBOOK, requestCategoriesGet} from './api.js';
-import {Order, Orders} from './classes.js';
-import {bindAnima} from './uiFunc.js';
+import {reuqestPOSTBOOK, requestCategoriesGet} from '/testWebPage/js/api.js';
+import {Order, Orders} from '/testWebPage/js/classes.js';
+import {bindAnima} from '/testWebPage/js/uiFunc.js';
 
 export var sort = "ASC";
 export var categoriesID = null;
