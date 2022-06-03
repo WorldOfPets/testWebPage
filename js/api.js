@@ -1,6 +1,6 @@
 /*REST API FUNCTION WITH USING PROMISE */
 import { createCard, dataReturn } from "./func.js";
-import { search, sort, categoriesID, setCategoriesID, createOrder } from "./main.js";
+import { search, sort, categoriesID, setCategoriesID, createOrder } from "/testWebPage/js/main.js";
 import { Categories } from "./classes.js";
 
 const requestURL = 'http://45.8.249.57/bookstore-api/books';
