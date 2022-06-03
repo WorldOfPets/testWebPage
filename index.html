@@ -1,13 +1,99 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Test Web Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel = "icon" href = "./img/BooksShopLogo.svg" type = "image/x-icon">
+    <title>BookShop</title>
 </head>
-<body>
-    <h1>Test web page one</h1>
-    <h1>Test web page two</h1>
-    <h1>Test web page second</h1>
+<body >
+    <input type="checkbox" id="chkBasket" 
+    style="position: absolute;
+    visibility: hidden;">
+    <header class="headerstyle" id="headerlost">
+        <div class="maindivheader">
+            <img src="/img/BookIcon.png"/>
+            <span class="headspan">Магазин книг</span>
+            <div class="pricediv">
+                <span>Баланс</span>
+                <span id="balance">10200</span>
+                <span>руб.</span>
+            </div>
+        </div>
+        <div class="searchdiv">
+            <div>
+                <div class="sort-categories-div" >
+                    <span class="sort-categories" id="sort-categories">
+                        <span>Сортировать по цене </span>
+                        <img src="/img/SortIcon.png"
+                        style="height: 24px;
+                        background: transparent;"
+                        />
+                    </span>
+                    <div>
+                        <span class="head-categories" id="categories">Категория</span>
+                        <ul class="ul-categories" id="drop">
+                            <li>Сбросить</li>
+                        </ul>
+                        <img src="/img/CaretDownIcon.png" class="img-categories"/>
+                    </div>
+                </div>
+                <form method="post" class="searcform">
+                    <input type="text" class="searchinput"
+                    id="search-pole"
+                    placeholder="Введите название книги">
+                </form>
+            </div>
+            <span class="basketspan">
+                <span>Корзина</span>
+                
+                <img src="/img/BuyIcon.png" id="img-basket"/>
+            </span>
+        </div>
+    </header>
+    <!--ORDERS CONTAINER-->
+    <div class="orders-div" >
+        <div class="orders-scroll-div" id="orders-div-drop">
+            <!--
+                <div class="orderdiv">
+                <div class="order-content-div">
+                    <p >Не заставляйте меня думать</p>
+                    <span class="order-count">1 </span><span class="order-count">шт.</span>
+                    <br/><br/>
+                    <span class="order-price" >1400</span ><span>руб.</span>    
+                </div>
+                <div class="cancelorderdiv"><img/></div>
+            </div>
+            -->
+        </div>
+        <div class="order-buy-div">
+            <div class="order-sum-price-div">
+                <span id="sum-price">3230</span><span style="font-size: 20px;">руб.</span>
+            </div>
+            <div class="order-button-buy-div">
+                <button class="order-button" id="btn-buy">Купить</button>
+            </div>
+        </div>
+    </div>
+    <!--CARDS CONTAINER-->
+    <div class="cardscontainerdiv" id="container-card" >
+        <!--
+            <div class="carddiv">
+            <div class="card-grid-div">
+                <img src="/img/BooksShopLogo.svg" class="card-img"/>
+                <div class="cardright">
+                    <span class="cardtitle">Не </span>
+                    <span class="cardprice">150<span>руб.</span></span>
+                    <button class="cardbuttonbuy">В корзину</button>
+                </div>
+            </div>
+        </div>
+        -->
+        
+    </div>
 </body>
 </html>

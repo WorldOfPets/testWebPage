@@ -1,0 +1,387 @@
+/*FONT*/
+@font-face {
+    font-family: Inter;
+    src: url(/font/InterRegular.ttf);
+}
+@font-face {
+    font-family: Nunito;
+    src: url(/font/Nunito.ttf);
+}
+/*COLORS*/
+:root{
+    --color-gray:#C4C4C4;
+    --color-darkgray:#8C8A8A;
+    --color-main: #FAFAFA;
+}
+/*ALL*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  Nunito, Inter, Arial, Helvetica, sans-serif ;
+    font-weight: 400;
+    background-color: var(--color-main);
+}
+/*HEADER DIV*/
+.maindivheader{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 12fr 5fr;
+    height: 80px;
+    border-bottom: solid 1px var(--color-gray);
+    align-items: center;
+}
+/*LOGO and HEAD*/
+.maindivheader img, .headspan {
+    justify-self: start;
+    height: 41px;
+    font-size: 32px;
+}
+/*PRICE*/
+.pricediv {
+    justify-self: end;
+    font-size: 20px;
+}
+/*BUTTON*/
+button {
+    border: solid 2px;
+    border-color: var(--color-darkgray);
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+    word-spacing: nowrap;
+    padding: 2px 8px 2px 8px;
+    margin: 5px;
+}
+button:hover{
+    border-radius: 0px;
+    transition-duration: 0.5s;
+}
+/*HEADER*/
+.headerstyle{
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-color: var(--color-main);
+    box-shadow: 1px 1px 5px 0px var(--color-gray);
+}
+/*SEARCH DIV*/
+.searchdiv{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+/*SORT AND CATEGORIES DIV*/
+.sort-categories-div{
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: left;
+}
+/*BASKET*/
+.basketspan{
+    font-size: 32px;
+    align-self: center;
+    cursor: pointer;
+    justify-self: left;
+}
+.basketspan span:hover{
+    text-shadow: 1px 1px 1px var(--color-gray);
+}
+/*ORDERS DIV*/
+.orders-div{
+    margin-top: 220px;
+    position: fixed;
+    display: grid;
+    grid-template-rows: 55% 20%;
+    align-items: start;
+    width: 35%;
+    height: 100%;
+    right: 0;
+    background-color: transparent;
+}
+/*ORDERS SCROLL DIV*/
+.orders-scroll-div{
+    height: 100%;
+    background-color: transparent;
+    overflow-y: auto;
+}
+/*ORDER CONTENT DIV*/
+.order-content-div{
+    margin: 10px;
+}
+/*ORDER PRICE*/
+.order-price{
+    font-size: 18px;
+    margin-top: 10px;
+}
+/*ORDER PRICE SPAN*/
+.order-price-span{
+    font-size: 16px;
+}
+/*ORDER COUNT*/
+.order-count{
+    font-size: 14px;
+    color: var(--color-gray);
+}
+/*CANCEL ORDER DIV*/
+.cancelorderdiv {
+    cursor: pointer;
+    display: flex;
+    position: static;
+    height: 35px;
+    width: 35px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    border-radius: 50px;
+}
+/*CANCEL IMAGE*/
+.cancelorderdiv img {
+    margin: auto;
+    background-color: transparent;
+    content: url("/img/RemoveOrderIcon.png");
+}
+/*CANCEL MOUSE OVER*/
+.cancelorderdiv:hover{
+    background-color: var(--color-gray);
+    transition-duration: 1s;
+}
+/*ORDER WITH SUM PRICE*/
+.order-buy-div{
+    height: 100%;
+    width: 95%;
+    border-top: solid 1px var(--color-gray);
+    margin: 15px auto;
+}
+/*SUM PRICE*/
+.order-sum-price-div{
+    font-size: 32px;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+/*SUM RUB*/
+.order-sum-price-div span span{
+    font-size: 20px;
+}
+/*ORDER BUTTON DIV*/
+.order-button-buy-div {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+/*ORDER BUTTON*/
+.order-button{
+    width: 65%;
+    font-size: 24px;
+    height: 35px;
+}
+/*ORDER CARD*/
+.orderdiv{
+    background-color: transparent;
+    width: 95%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    align-items: center;
+    border-bottom: solid 1px var(--color-gray);
+    margin: auto;
+    margin-top: 10px;
+}
+.orderdiv:hover{
+    box-shadow: 1px 1px 5px 0px var(--color-gray);
+}
+/*CARDS CONTAINER DIV*/
+.cardscontainerdiv{
+    height: 100%;
+    margin-left: 5%;
+    padding-top: 220px;
+    width: 60%;
+    box-shadow: 1px 1px 1px 0px var(--color-gray);
+    background-color: var(--color-main);
+    display: inline-block;
+}
+/*CARD DIV*/
+.carddiv{
+    display: inline-block;
+    height: auto;
+    box-shadow: 1px 1px 5px 0px var(--color-gray);
+    width: 360px;
+    min-height: 60px;
+    margin: 10px;
+}
+.carddiv:hover{
+    transform: scale(1.01);
+}
+/*REMOVE BORDER FOR INPUT TEXT*/
+input:focus{
+    outline: none;
+}
+/*SORT CATEGORIES*/
+.sort-categories{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    font-size: 16px; 
+}
+.sort-categories:hover{
+    text-shadow: 1px 1px 1px var(--color-gray);
+}
+/*SEARCH FORM*/
+.searcform{
+    margin-bottom: 15px;
+    width: 95%;
+    align-items: center;
+    justify-items: start;
+}
+/*SEARCH INPUT*/
+.searchinput{
+    border: 0; 
+    background: url("/img/SearchIcon.png") no-repeat left;
+    background-size: 24px;
+    padding-left:30px;
+    width: inherit;
+    border-bottom: solid 1px var(--color-gray);
+    font-size: 14px;
+    height: 35px;
+}
+/*CARD GRID*/
+.card-grid-div{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0px;
+    
+}/*CARD IMAGE*/
+.card-img{
+    height: 240px;
+    background-color: transparent;
+    background-size: 100%;
+    margin: 5px;
+}
+/*CARD GRID RIGHT*/
+.cardright{
+    display: grid;
+    grid-template-areas:"title"
+                        "price"
+                        "button";
+    grid-template-rows: 70% 1fr 1fr;                    
+    height: auto;
+    width: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+/*CARD TITLE*/
+.cardright > .cardtitle{
+    margin-top: 10px;
+    grid-area: title;
+    font-size: 18px;
+    margin-left: 10px;
+    display: flex;
+}
+/*CARD PRICE*/
+.cardright > .cardprice{
+    grid-area: price;
+    display: flex;
+    align-items: end;
+    justify-self: center;
+    font-size: 18px;
+}
+/*CARD PRICE RUB*/
+.cardprice span{
+    font-size: 16px;
+}
+/*CARD BUTTON*/
+.cardright > .cardbuttonbuy{
+    grid-area: button;
+    height: 40px;
+    align-self: start;
+    width: 90%;
+    justify-self: center;
+    min-height: 30px;
+    white-space: nowrap;
+}
+/*HEAD CATEGORIES*/
+.head-categories {
+    cursor: pointer;
+}
+.head-categories:hover {
+    text-shadow: 1px 1px 1px var(--color-gray);
+}
+/*ICON CATEGORIES*/
+.img-categories{
+    height: 24px;
+    position: absolute;
+    background: transparent;
+}
+/*LIST CATEGORIES DROP*/
+.ul-categories {
+    margin-top: 5px;
+    position: absolute;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 1000;
+    border: solid 1px var(--color-gray);
+    border-radius: 10px;
+}
+/*ELEMENTS LIST DROP*/
+.ul-categories li {
+    list-style-type: none;
+    margin: 10px;
+    border-bottom: solid 1px var(--color-gray);
+}
+.ul-categories li:hover {
+    transform: scale(1.05);
+}
+/*ADAPTING FOR MOBIEL*/
+@media only screen and (max-width: 768px) {
+    .orders-div{
+        right: -300px;
+        z-index: 99;
+        width: 300px;
+        background-color: var(--color-main);
+        margin-top: 160px;
+    }
+    .order-sum-price-div, .order-button-buy-div{
+        margin: 5px auto;
+    }
+    .cardscontainerdiv{
+        width: 100%;
+        margin: auto;
+        padding-top: 160px;
+    }
+    .headspan{
+        font-size: 30px;
+    }
+    .pricediv{
+        font-size: 16px;
+    }
+    .basketspan span{
+        display: none;
+    }
+    .basketspan img {
+        position: absolute;
+        right: 30px;
+        width: 24px;
+        background-color: var(--color-gray);
+        padding: 15px;
+        z-index: 100;
+        border-radius: 15px;
+        top: 90px;
+    }
+    .searchdiv{
+        margin: 3px auto;
+    }
+    .sort-categories-div{
+        grid-template-columns: 1fr 8fr;
+        align-items: center;
+        justify-items: center;
+        margin: 0px;
+    }
+}
+
